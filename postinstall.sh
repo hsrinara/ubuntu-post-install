@@ -13,6 +13,8 @@ sudo apt-get -y install wireshark
 sudo apt-get -y install atom
 sudo apt-get -y install eclipse
 
+apm install language-rust
+
 cp .gitconfig ~/
 mkdir ~/applications
 mkdir ~/code
