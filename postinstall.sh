@@ -1,5 +1,8 @@
 #!/bin/bash
 
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['']"
+
 sudo apt-get -y install vim
 sudo apt-get -y install firefox
 sudo apt-get -y install gedit
