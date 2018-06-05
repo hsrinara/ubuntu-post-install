@@ -10,7 +10,6 @@ sudo apt-get -y install python
 sudo apt-get -y install pip
 sudo apt-get -y install terminator
 sudo apt-get -y install vlc
-sudo apt-get -y install wireshark
 sudo apt-get -y install atom
 sudo apt-get -y install eclipse
 sudo apt-get -y install git
@@ -27,4 +26,7 @@ echo "pulseaudio -k && sudo alsa force-reload" >> ~/applications/scripts/restart
 chmod u+x ~/applications/scripts/restart_sound.sh
 
 echo "export PS1='\\w:\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$ '" >> ~/.bash_profile
+
+# has dialog prompt :'(
+sudo apt-get -y install wireshark 
 
