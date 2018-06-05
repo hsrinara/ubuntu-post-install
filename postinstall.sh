@@ -4,6 +4,7 @@ sudo apt-get -y install vim
 sudo apt-get -y install firefox
 sudo apt-get -y install gedit
 sudo apt-get -y install gradle
+sudo apt-get -y install maven
 sudo apt-get -y install keepassx
 sudo apt-get -y install python 
 sudo apt-get -y install pip
