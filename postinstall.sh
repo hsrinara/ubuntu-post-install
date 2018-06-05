@@ -19,10 +19,9 @@ sudo apt-get -y install rustc
 #apm install language-rust
 
 cp .gitconfig ~/
-mkdir ~/applications
-mkdir ~/code
-mkdir ~/applications/scripts
-echo "export PATH=$PATH:~/applications/scripts"
+mkdir -p ~/code
+mkdir -p ~/applications/scripts
+echo "export PATH=$PATH:~/applications/scripts" >> ~/.bash_profile
 echo "pulseaudio -k && sudo alsa force-reload" >> ~/applications/scripts/restart_sound.sh
 chmod u+x ~/applications/scripts/restart_sound.sh
 
