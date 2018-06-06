@@ -29,6 +29,9 @@ echo "export PATH=$PATH:~/applications/scripts" >> ~/.bash_profile
 echo "pulseaudio -k && sudo alsa force-reload" >> ~/applications/scripts/restart_sound.sh
 chmod u+x ~/applications/scripts/restart_sound.sh
 
+mkdir -p ~/.config/terminator
+cp ./terminator-config ~/.config/terminator
+
 echo "export PS1='\\w:\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$ '" >> ~/.bash_profile
 
 # has dialog prompt :'(
