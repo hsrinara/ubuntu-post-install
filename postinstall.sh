@@ -21,8 +21,8 @@ sudo apt -y install eclipse
 sudo apt -y install git
 sudo apt -y install libgnome2-bin
 
-sudo apt-get -y install cargo
-sudo apt-get -y install rustc
+sudo apt -y install cargo
+sudo apt -y install rustc
 #apm install language-rust
 
 cp .gitconfig ~/
@@ -38,5 +38,5 @@ cp ./terminator-config ~/.config/terminator
 echo "export PS1='\\w:\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$ '" >> ~/.bash_profile
 
 # has dialog prompt :'(
-sudo apt-get -y install wireshark 
+sudo apt -y install wireshark 
 
