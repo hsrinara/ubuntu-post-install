@@ -19,6 +19,7 @@ sudo apt-get -y install vlc
 sudo apt-get -y install atom
 sudo apt-get -y install eclipse
 sudo apt-get -y install git
+sudo apt-get -y install libgnome2-bin
 
 sudo apt-get -y install cargo
 sudo apt-get -y install rustc
