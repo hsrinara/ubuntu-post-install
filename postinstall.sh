@@ -5,7 +5,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['']"
 gsettings set org.gnome.desktop.wm.keybindings begin-move "['']"
-gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'[]'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
 
 sudo apt -y install vim
 sudo apt -y install firefox
