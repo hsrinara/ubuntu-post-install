@@ -6,20 +6,20 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['']"
 gsettings set org.gnome.desktop.wm.keybindings begin-move "['']"
 
-sudo apt-get -y install vim
-sudo apt-get -y install firefox
-sudo apt-get -y install gedit
-sudo apt-get -y install gradle
-sudo apt-get -y install maven
-sudo apt-get -y install keepassx
-sudo apt-get -y install python 
-sudo apt-get -y install pip
-sudo apt-get -y install terminator
-sudo apt-get -y install vlc
-sudo apt-get -y install atom
-sudo apt-get -y install eclipse
-sudo apt-get -y install git
-sudo apt-get -y install libgnome2-bin
+sudo apt -y install vim
+sudo apt -y install firefox
+sudo apt -y install gedit
+sudo apt -y install gradle
+sudo apt -y install maven
+sudo apt -y install keepassx
+sudo apt -y install python 
+sudo apt -y install pip
+sudo apt -y install terminator
+sudo apt -y install vlc
+sudo apt -y install atom
+sudo apt -y install eclipse
+sudo apt -y install git
+sudo apt -y install libgnome2-bin
 
 sudo apt-get -y install cargo
 sudo apt-get -y install rustc
