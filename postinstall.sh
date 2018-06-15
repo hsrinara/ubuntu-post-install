@@ -19,6 +19,7 @@ gsettings set org.gnome.desktop.wm.preferences auto-raise-delay 10
 gsettings set org.gnome.desktop.wm.preferences auto-raise true
 
 alias sl=ls
+alias cd..="cd .."
 
 sudo apt -y install vim
 sudo apt -y install firefox
