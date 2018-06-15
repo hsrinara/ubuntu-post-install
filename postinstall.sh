@@ -39,7 +39,14 @@ chmod u+x ~/applications/scripts/restart_sound.sh
 mkdir -p ~/.config/terminator
 cp ./terminator-config ~/.config/terminator
 
-echo "export PS1='\\w:\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$ '" >> ~/.bash_profile
+#echo "export PS1='\\w:\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$ '" >> ~/.bash_profile
+echo > ~/.bash_profile << EOL
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\w:\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+EOL
+
 
 # has dialog prompt :'(
 sudo apt -y install wireshark 
