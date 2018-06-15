@@ -1,12 +1,20 @@
 #!/bin/bash
 
+# intellij conflicts
+#ctrl+alt+left
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['']"
+#ctrl+alt+right
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['']"
+#ctrl+alt+up
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['']"
+#ctrl+alt+down
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['']"
+#alt+f7
 gsettings set org.gnome.desktop.wm.keybindings begin-move "['']"
+#ctrl+shift+t
 gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
 
+# mouse focus
 gsettings set org.gnome.desktop.wm.preferences auto-raise-delay 10
 gsettings set org.gnome.desktop.wm.preferences auto-raise true
 
