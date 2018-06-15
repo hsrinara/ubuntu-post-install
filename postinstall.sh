@@ -18,6 +18,8 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
 gsettings set org.gnome.desktop.wm.preferences auto-raise-delay 10
 gsettings set org.gnome.desktop.wm.preferences auto-raise true
 
+alias sl=ls
+
 sudo apt -y install vim
 sudo apt -y install firefox
 sudo apt -y install gedit
