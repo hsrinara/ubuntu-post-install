@@ -55,6 +55,15 @@ cp ./terminator-config ~/.config/terminator
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
+
+# Convert gits t into git status
+function gits() {
+  case $* in 
+    t ) command git status; ;; 
+    * ) command echo "Did you mean git status?"; ;; 
+  esac
+}
+
 export PS1="\w:\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 
