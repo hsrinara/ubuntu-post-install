@@ -64,6 +64,14 @@ function gits() {
   esac
 }
 
+# Converts gti into git
+function gti() {
+  case $* in  
+    * ) command git "$@"; ;;
+  esac
+}
+
+
 export PS1="\w:\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 
