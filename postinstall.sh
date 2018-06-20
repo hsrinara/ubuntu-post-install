@@ -35,6 +35,8 @@ sudo apt -y install atom
 sudo apt -y install eclipse
 sudo apt -y install git
 sudo apt -y install libgnome2-bin
+# windows rdp client
+sudo apt-get install remmina
 
 sudo apt -y install cargo
 sudo apt -y install rustc
