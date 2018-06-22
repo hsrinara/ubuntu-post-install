@@ -73,6 +73,13 @@ function gti() {
   esac
 }
 
+# cd ..
+function c() {
+  case $* in 
+    d.. ) command cd ..; ;;
+  esac
+}
+
 
 export PS1="\w:\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
