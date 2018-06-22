@@ -75,8 +75,9 @@ function gti() {
 
 # cd ..
 function c() {
-  case $* in 
+  case $* in
     d.. ) command cd ..; ;;
+    *   ) command "Unknown command"; ;;
   esac
 }
 
