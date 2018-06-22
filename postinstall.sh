@@ -45,6 +45,7 @@ sudo apt -y install rustc
 cp .gitconfig ~/
 mkdir -p ~/code
 mkdir -p ~/applications/scripts
+cp ./jpid ~/applications/scripts/jpid
 
 echo "export PATH=$PATH:~/applications/scripts" >> ~/.bash_profile
 
