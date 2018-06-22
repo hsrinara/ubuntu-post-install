@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -eu
+
+if [ -z "$*" ]; then
+  jps
+else
+  jps | grep "$1" |  cut -dR -f1
+fi
