@@ -36,6 +36,7 @@ sudo apt -y install atom
 sudo apt -y install eclipse
 sudo apt -y install git
 sudo apt -y install libgnome2-bin
+sudo apt -y install python-pip
 # windows rdp client
 sudo apt-get install remmina
 
