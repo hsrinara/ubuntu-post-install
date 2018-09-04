@@ -95,3 +95,5 @@ export PS1="\w:\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 # has dialog prompt :'(
 sudo apt -y install wireshark 
 
+# Improve intellij performance with large git projects
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
