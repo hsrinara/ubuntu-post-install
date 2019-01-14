@@ -11,6 +11,8 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['']"
 #alt+f7
 gsettings set org.gnome.desktop.wm.keybindings begin-move "['']"
+#alt+f8
+gsettings set org.gnome.desktop.wm.keybindings  begin-resize  "['']"
 #ctrl+shift+t
 gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
 
