@@ -46,14 +46,20 @@ sudo apt -y install rustc
 
 cp .gitconfig ~/
 mkdir -p ~/code
+
+## Configure ~/applications/scripts
 mkdir -p ~/applications/scripts
 cp ./jpid ~/applications/scripts/jpid
-
+cp ./export_java_8.sh ~/applications/scripts
+cp ./export_java_11.sh ~/applications/scripts
+alias java8="source ~/applications/scripts/export_java_8.sh"
+alias java11="source ~/applications/scripts/export_java_11.sh"
 echo "export PATH=$PATH:~/applications/scripts" >> ~/.bash_profile
-
 rm -rf ~/applications/scripts/restart_sound.sh
 echo "pulseaudio -k && sudo alsa force-reload" >> ~/applications/scripts/restart_sound.sh
 chmod u+x ~/applications/scripts/restart_sound.sh
+chmod u+x ~/applictionas/scripts/*
+
 
 mkdir -p ~/.config/terminator
 cp ./terminator-config ~/.config/terminator
