@@ -15,6 +15,8 @@ gsettings set org.gnome.desktop.wm.keybindings begin-move "['']"
 gsettings set org.gnome.desktop.wm.keybindings  begin-resize  "['']"
 #ctrl+shift+t
 gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
+# alt f1
+gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "[]"
 
 # mouse focus
 gsettings set org.gnome.desktop.wm.preferences auto-raise-delay 10
